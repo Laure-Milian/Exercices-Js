@@ -4,24 +4,15 @@
 	var Computer;
 	var Score;
 	var Tentatives = 0;
-	var TentativesMax = 3;
-	var min = 0;
-	var max = 10;
 
+	var TentativesMax = prompt("Choisir un nombre de vies");
+	console.log(TentativesMax);
 
-	$("#tentatives").change(function() {
-		TentativesMax = parseInt($("#tentatives").val(), 10);
-	});
+	var min = prompt("Choisir nombre min");
+	console.log(min);
 
-	$("#min").change(function(){
-		min = parseInt($("#min").val(), 10);
-		console.log(min);
-	});
-
-	$("#max").change(function(){
-		max = parseInt($("#max").val(), 10);
-		console.log(max);
-	});
+	var max = prompt("Choisir nombre max");
+	console.log(max);
 
 	$("#valider").click(function() {
 		Player = parseInt($("#player").val(), 10);
