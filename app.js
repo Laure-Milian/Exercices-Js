@@ -27,15 +27,12 @@
 		Player = parseInt($("#player").val(), 10);
 		Computer = getRandomInt(min, max);
 		Tentatives = Tentatives + 1;
-		console.log(Tentatives);
-		console.log(Player);
-		console.log(Computer);
 
 		if (Tentatives <= TentativesMax) {
 			Jeu(Player, Computer);
 		}
 		else {
-			$("h2").html("Trop de tentatives !");
+			$("h2").html("Game over!");
 			$("h3").html("");
 		}
 	});
